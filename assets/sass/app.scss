@@ -17,3 +17,42 @@ body{
     }
   }
 }
+
+.last-projects {
+  color: black;
+  .project-col {
+    .card {
+      &:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+      }
+    }
+    .project-img {
+      position: relative;
+      overflow: hidden;
+      img {
+        object-fit: cover;
+      }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.1;
+        z-index: 1;
+        transition: opacity 0.3s ease;
+      }
+      &:hover::before {
+        opacity: 0;
+      }
+      &:hover img {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+      }
+    }
+  }
+}
