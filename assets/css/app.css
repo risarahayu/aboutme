@@ -17,6 +17,16 @@ body {
   background-color: #032038;
 }
 
+section:first-child {
+  min-height: 100vh;
+}
+section:nth-child(odd) {
+  background-color: #032038;
+}
+section:nth-child(even) {
+  background-color: #003049;
+}
+
 .experience-box .experience-title {
   min-height: 100px;
   font-size: 1.25rem;

@@ -5,6 +5,18 @@ body{
   background-color: #032038;
 }
 
+section {
+  &:first-child {
+    min-height: 100vh;
+  }
+  &:nth-child(odd) {
+    background-color: #032038;
+  }
+  &:nth-child(even) {
+    background-color: #003049;
+  }
+}
+
 // Section 1
 .experience-box {
   .experience-title {
@@ -63,3 +75,6 @@ body{
 .education-box {
   min-height: 135px;
 }
+
+// #14213d
+// #003049
