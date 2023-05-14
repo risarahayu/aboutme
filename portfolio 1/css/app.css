@@ -1,0 +1,29 @@
+.bg{
+  background-image: url("../bg-header.svg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+section{
+  padding: 2em;
+}
+
+li{
+  list-style-type: circle;
+  padding:0.5em;
+}
+li a{
+  color: black;
+  text-decoration: none;
+}
+li a:hover{
+  color: #219ebc;
+}
+.img{
+  height: 70vh;
+  text-align: left;
+}
+.img-width{
+  width: 100%;
+  text-align: left;
+}
