@@ -12,10 +12,14 @@
 
 // MAX WIDTH
 // `sm` applies to x-small devices
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  .education-box {
+    min-height: 220px !important;
+  }
+}
 // `md` applies to small devices
 @media (max-width: 767.98px) {
-  .experience-box{
+  .experience-box {
     .experience-title {
       border-right: unset !important;
       text-align: center;

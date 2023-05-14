@@ -1,3 +1,8 @@
+@media (max-width: 575.98px) {
+  .education-box {
+    min-height: 220px !important;
+  }
+}
 @media (max-width: 767.98px) {
   .experience-box .experience-title {
     border-right: unset !important;
@@ -57,4 +62,8 @@ body {
 .last-projects .project-col .project-img:hover img {
   transform: scale(1.1);
   transition: transform 0.3s ease;
+}
+
+.education-box {
+  min-height: 135px;
 }/*# sourceMappingURL=app.css.map */
