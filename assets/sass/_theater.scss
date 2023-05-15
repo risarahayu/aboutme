@@ -1,0 +1,44 @@
+// Theaters
+@import '//fonts.googleapis.com/css?family=Cutive';
+
+$font-family-base: 'Cutive', serif;;
+$font-size-root: 14px;
+$font-size-base: 1rem;
+$line-height-base: 1.4;
+
+$color-black: #222;
+$color-white: #ededed;
+$color-red: #c92b2b;
+
+$spacing: 2rem;
+$spacing-large: $spacing * 3;
+
+.scene {
+  padding: $spacing-large $spacing;
+  // max-width: 800px;
+  margin: 0 auto;
+}
+
+.actor {
+  font-size: 2.8rem;
+  display: flex;
+  margin-bottom: $spacing;
+
+  &:last-of-type {
+    margin-bottom: $spacing-large;
+  }
+}
+
+.actor__content {
+  flex-grow: 1;
+}
+
+@keyframes blink {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.actor__content--typing::after {
+  content: '|';
+  animation: blink 500ms infinite;
+}

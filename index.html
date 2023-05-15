@@ -13,11 +13,24 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/theaterjs/latest/theater.min.js"></script>
+
+  <!-- animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!-- Custom Css & JS -->
   <link href="assets/css/app.css" rel="stylesheet">
   <script src="assets/js/app.js"></script>
 </head>
 <body>
+  <div class="container">
+    <div class="scene">
+      <div class="actor">
+        <div class="actor__prefix">-</div>
+        <div id="risa" class="actor__content"></div>
+      </div>   
+    </div>
+  </div>
   <header></header>
   <main>
     <!-- SECTION HEADER -->
@@ -33,7 +46,7 @@
         </div>
       </div>
     </section>
-
+    
     <!-- SECTION LAST PROJECTS -->
     <section id="section_2" class="py-5">
       <div class="container">
@@ -545,5 +558,39 @@
     </section>
   </main>
   <footer></footer>
+
+  <script type="text/javascript">
+    var theater = theaterJS()
+    theater
+      .on('type:start, erase:start', function () {
+        theater.getCurrentActor().$element.classList.add('actor__content--typing')
+      })
+      .on('type:end, erase:end', function () {
+        theater.getCurrentActor().$element.classList.remove('actor__content--typing')
+      })
+
+    theater
+      .addActor('risa', { speed: 0.8, accuracy: 0.6 })
+      .addActor('risa')
+      .addScene('risa:Do you know?', 50)
+      .addScene('risa:UI/UX Design is not an art!', 1000)
+      .addScene('risa:That is why you need me!', 500)
+      // .addScene("risa:Let's Finding the Balance Between Beauty and Functionality in UI/UX Design", 5)
+      // .addScene('risa:That\'s not true!', 600)
+      // .addScene('risa:That\'s impossible!', 400)
+      // .addScene('risa:Search your feelings.', 1600)
+      // .addScene('risa:You know it to be true.', 1000)
+      // .addScene('risa:Noooooooo! ', 600, 'No!', 400)
+      // .addScene('risa:risa.', 600)
+      // .addScene('risa:You can destroy the Emperor.', 1600)
+      // .addScene('risa:He has foreseen this. ', 800)
+      // .addScene('risa:It is your destiny.', 1600)
+      // .addScene('risa:Join me.', 800)
+      // .addScene('risa:Together we can rule the galaxy.', 800)
+      // .addScene('risa:As father and son.', 1600)
+      // .addScene('risa:Come with me. ', 800)
+      // .addScene('risa:It is the only way.', 2000)
+      .addScene(theater.replay.bind(theater))
+  </script>
 </body>
 </html>
