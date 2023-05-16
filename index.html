@@ -14,6 +14,7 @@
   <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/theaterjs/latest/theater.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
 
   <!-- animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -23,11 +24,10 @@
   <script src="assets/js/app.js"></script>
 </head>
 <body>
-  <div class="container">
-    <div class="scene">
+  <div class="container text-center d-flex" style="height: 100vh;">
+    <div class="scene d-flex align-items-center">
       <div class="actor">
-        <div class="actor__prefix">-</div>
-        <div id="risa" class="actor__content"></div>
+        <div id="risa" class="actor__content "></div>
       </div>   
     </div>
   </div>
@@ -35,9 +35,9 @@
   <main>
     <!-- SECTION HEADER -->
     <section id="section_1" class="py-5">
-      <div class="container">
+      <div class="container"  >
         <!-- Content here -->
-        <img src="assets/img/HEADER.svg" class="img-fluid p-md-5 pt-5 mx-auto d-block" alt="Responsive image">
+        <img src="assets/img/Header.gif" class="img-fluid p-md-5 pt-5 mx-auto d-block" alt="Responsive image">
         <div class="row px-5 py-3 experience-box">
           <div class="experience-title col-md-3">2 Year as UI/UX Designer</div>
           <div class="experience-title col-md-3">1 Project Internation <br class="d-none d-lg-block"> on going</div>
@@ -156,88 +156,70 @@
           </div>
         </div>
       </div>
+      
     </section>
     <!-- Experience -->
-    <section id="Experience" class="py-5">
-      <div class="container">
-        <p class="fs-2 text-center fw-semibold pb-5">Experience</p>
-        <div class="row">
-          <div class="col-md-6">
-            <p class="fs-5 fw-semibold m-0">
-              Nov 2019 - Jan 2020
-            </p>
-            <p>
-              AidHub Foundation · Full-time
-            </p>            
+    <section class="timeline py-5" id="timeline">
+      <div class="container"> 
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card js--fadeInRight">
+            <div class="timeline-img-header" style="background-image: url('assets/img/jik.svg');">
+              <img src="" alt="">
+              <!-- <p class="fs-5 timeline-text">JIK Educare</h2> -->
+            </div>
+            <div class="date">Nov 2019 - Jan 2020</div>
+            <p class="fs-5 fw-semibold m-0 timeline-text">Graphic Designer</p>
+              <ul class="timeline-text p-3">
+                  <li>Create feeds for microblogs</li>
+                  <li>Create certificate designs</li>
+              </ul>
           </div>
-          <div class="col-md-6">
-            <p class="fs-5 fw-semibold m-0">
-              UI/UX Designer
+        </div>    
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card js--fadeInLeft">
+            <div class="timeline-img-header"  style="background-image: url('assets/img/lesku.svg');">
+              <!-- <p class="fs-5 timeline-text">Lesku.id</h2> -->
+            </div>
+            <div class="date">Oct 2020 - Dec 2020</div>
+            <p class="timeline-text">
+              <p class="fs-5 fw-semibold m-0 timeline-text">
+                Graphic Designer
+              </p>
+              <p>
+                <ul class="timeline-text p-3">
+                    <li>Create feeds for microblogs</li>
+                    <li>Making promotion concept for Lesku.id</li>
+                </ul>
+              </p>
+              <p class="fs-5 fw-semibold m-0 timeline-text">
+                Web Developer
+              </p>
+              <p>
+                <ul class="timeline-text  p-3">
+                  <li>Create website for Payroll information system</li>
+                </ul>
+              </p>
             </p>
-            <p>
-              <ul>
-                <li>Create UI design for Mission Empowerment Platform</li>
+          </div>
+        </div>   
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+          <div class="timeline-content timeline-card js--fadeInRight">
+            <div class="timeline-img-header"  style="background-image: url('assets/img/Aidhub.svg');">
+              <!-- <p class="fs-5 timeline-text">AidHub Foundation</h2> -->
+            </div>
+            <div class="date">Nov 2019 - Jan 2020</div>
+            <p class="fs-5 fw-semibold m-0 timeline-text">Graphic Designer</p>
+              <ul class="timeline-text  p-3">
+                  <li>Create UI design for Mission Empowerment Platform</li>
                   <li>Sometime I work for editing PPT</li>
                   <li>Make design for Landing Page</li>
                   <li>Make all about design need</li>
               </ul>
-            </p>
           </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col-md-6">
-            <p class="fs-5 fw-semibold m-0">
-              Oct 2020 - Dec 2020 
-            </p>
-            <p>
-              LESKU.ID · Internship
-            </p>
-          </div>
-          <div class="col-md-6">
-            <div class="">
-              <p class="fs-5 fw-semibold m-0">
-                Graphic Designer
-              </p>
-              <p>
-                <ul>
-                  <li>Create feeds for microblogs</li>
-                    <li>Making promotion concept for Lesku.id</li>
-                </ul>
-              </p>
-            </div>
-            <div class="">
-              <p class="fs-5 fw-semibold m-0">
-                Web Developer
-              </p>
-              <p>
-                <ul>
-                  <li>Create website for Payroll information system</li>
-                </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-5">
-          <div class="col-md-6">
-            <p class="fs-5 fw-semibold m-0">
-              Nov 2019 - Jan 2020
-            </p>
-            <p>
-              Jendela Ilmu kesehatan Bali · Freelance
-            </p>
-          </div>
-          <div class="col-md-6">
-            <p class="fs-5 fw-semibold m-0">
-              Graphic Designer
-            </p>
-            <p>
-              <ul>
-                <li>Create feeds for microblogs</li>
-                  <li>Create certificate designs</li>
-              </ul>
-            </p>
-          </div>
-        </div>
+        </div>  
       </div>
     </section>
     <!-- SECTION SKILL -->
@@ -562,7 +544,7 @@
   <script type="text/javascript">
     var theater = theaterJS()
     theater
-      .on('type:start, erase:start', function () {
+      .on('type:start', function () {
         theater.getCurrentActor().$element.classList.add('actor__content--typing')
       })
       .on('type:end, erase:end', function () {
@@ -591,6 +573,61 @@
       // .addScene('risa:Come with me. ', 800)
       // .addScene('risa:It is the only way.', 2000)
       .addScene(theater.replay.bind(theater))
+  </script>
+  <!-- timeline -->
+  <script>
+    $(function(){
+
+    window.sr = ScrollReveal();
+
+    if ($(window).width() < 768) {
+
+      if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+        $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+      }
+
+      sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+    } else {
+      
+      sr.reveal('.js--fadeInLeft', {
+        origin: 'left',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+      sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+    }
+
+    sr.reveal('.js--fadeInLeft', {
+        origin: 'left',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+      sr.reveal('.js--fadeInRight', {
+        origin: 'right',
+        distance: '300px',
+        easing: 'ease-in-out',
+        duration: 800,
+      });
+
+
+    });
+
   </script>
 </body>
 </html>
