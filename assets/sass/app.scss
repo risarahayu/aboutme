@@ -8,6 +8,19 @@ body{
   color:white;
   background-color: #032038;
 }
+.bg-white-linkedin{
+  background-color: white;
+}
+.bg-white-linkedin :hover{
+  background-color: #0076B2;
+
+}
+.gender-location{
+  width: 30%;
+}
+.my-photo{
+  max-width: 70%;
+}
 
 section {
   &:first-child {

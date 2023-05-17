@@ -227,7 +227,7 @@ blockquote {
 }
 
 .date {
-  background: #FF4081;
+  background: #003049;
   display: inline-block;
   color: #FFFFFF;
   padding: 10px;
@@ -265,11 +265,13 @@ blockquote {
 }
 :root {
   --red: hsl(0, 78%, 62%);
+  --violet: #ff81db;
   --cyan: hsl(180, 62%, 55%);
   --orange: hsl(34, 97%, 64%);
+  --pink:#EF476F;
   --blue: hsl(212, 86%, 64%);
   --varyDarkBlue: hsl(234, 12%, 34%);
-  --grayishBlue: hsl(229, 6%, 66%);
+  --grayishBlue: hsl(0, 0%, 0%);
   --veryLightGray: hsl(0, 0%, 98%);
   --weight1: 200;
   --weight2: 400;
@@ -304,7 +306,7 @@ blockquote {
 
 .box {
   border-radius: 5px;
-  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  box-shadow: 10px 10px 23px -8px var(--grayishBlue);
   padding: 30px;
   margin: 20px;
   background-color: #fcfcfc;
@@ -326,8 +328,8 @@ blockquote {
     height: 180px;
   }
 }
-.cyan {
-  border-top: 3px solid var(--cyan);
+.orange {
+  border-top: 3px solid var(--orange);
 }
 
 .red {
@@ -338,8 +340,12 @@ blockquote {
   border-top: 3px solid var(--blue);
 }
 
-.orange {
-  border-top: 3px solid var(--orange);
+.pink {
+  border-top: 3px solid var(--pink);
+}
+
+.violet {
+  border-top: 3px solid var(--violet);
 }
 
 @media (min-width: 950px) {
@@ -367,6 +373,22 @@ blockquote {
 body {
   color: white;
   background-color: #032038;
+}
+
+.bg-white-linkedin {
+  background-color: white;
+}
+
+.bg-white-linkedin :hover {
+  background-color: #0076B2;
+}
+
+.gender-location {
+  width: 30%;
+}
+
+.my-photo {
+  max-width: 70%;
 }
 
 section:first-child {

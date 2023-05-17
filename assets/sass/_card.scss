@@ -1,10 +1,12 @@
 :root {
   --red: hsl(0, 78%, 62%);
+  --violet: #ff81db;
   --cyan: hsl(180, 62%, 55%);
   --orange: hsl(34, 97%, 64%);
+  --pink:#EF476F;
   --blue: hsl(212, 86%, 64%);
   --varyDarkBlue: hsl(234, 12%, 34%);
-  --grayishBlue: hsl(229, 6%, 66%);
+  --grayishBlue: hsl(0, 0%, 0%);
   --veryLightGray: hsl(0, 0%, 98%);
   --weight1: 200;
   --weight2: 400;
@@ -60,7 +62,7 @@
 
 .box {
   border-radius: 5px;
-  box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  box-shadow: 10px 10px 23px -8px var(--grayishBlue);
   padding: 30px;
   margin: 20px;
   background-color: darken($color: #fff, $amount: 1);
@@ -84,8 +86,8 @@
   }
 }
 
-.cyan {
-  border-top: 3px solid var(--cyan);
+.orange {
+  border-top: 3px solid var(--orange);
 }
 .red {
   border-top: 3px solid var(--red);
@@ -93,8 +95,11 @@
 .blue {
   border-top: 3px solid var(--blue);
 }
-.orange {
-  border-top: 3px solid var(--orange);
+.pink{
+  border-top: 3px solid var(--pink);
+}
+.violet {
+  border-top: 3px solid var(--violet);
 }
 
 // h2 {
