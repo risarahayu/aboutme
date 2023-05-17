@@ -313,19 +313,9 @@ blockquote {
   color: black;
 }
 
-.box img {
-  float: right;
-}
-
-@media (max-width: 450px) {
-  .box {
-    height: 200px;
-  }
-}
 @media (max-width: 950px) and (min-width: 450px) {
   .box {
     text-align: center;
-    height: 250px;
   }
 }
 .orange {
@@ -365,6 +355,7 @@ blockquote {
   }
   .box {
     width: 30%;
+    min-width: 30%;
   }
   .header p {
     width: 30%;
