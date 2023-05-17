@@ -429,6 +429,13 @@ section:nth-child(even) {
   min-height: 135px;
 }
 
+.sosmed a {
+  background-color: white;
+}
+.sosmed a:hover {
+  background-color: #e6e6e6;
+}
+
 @media (max-width: 1199.98px) {
   .my-photo {
     max-width: 100%;

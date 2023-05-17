@@ -93,4 +93,13 @@ section {
   min-height: 135px;
 }
 
+.sosmed {
+  a {
+    background-color: white;
+    &:hover {
+      background-color: darken($color: #fff, $amount: 10);
+    }
+  }
+}
+
 @import "responsive";
