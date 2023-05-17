@@ -659,19 +659,23 @@
   <script>
     $(window).on('resize', function() {
       var windowWidth = $(window).width();
-      var slideValue = 3; // Nilai slide awal
+      var slideValue = 3;
+      var swiper = $('swiper-container');
 
       // Ubah nilai slide berdasarkan ukuran jendela
       if (windowWidth <= 768) {
         slideValue = 1;
+        swiper.attr('pagination', true);
       } else if (windowWidth <= 992) {
         slideValue = 2;
+        swiper.removeAttr('pagination');
       } else {
         slideValue = 3;
+        swiper.attr('pagination', true);
       }
 
       // Update nilai atribut slide pada elemen <swiper-container>
-      $('swiper-container').attr('slides-per-view', slideValue);
+      swiper.attr('slides-per-view', slideValue);
     });
   </script>
 </body>
