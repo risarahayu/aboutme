@@ -1,4 +1,3 @@
-@import "responsive";
 @import "theater";
 @import "text_rotate";
 @import "timeline";
@@ -16,7 +15,8 @@ body{
 
 }
 .gender-location{
-  width: 30%;
+  // width: 30%;
+  gap: 20px;
 }
 .my-photo{
   max-width: 70%;
@@ -92,3 +92,5 @@ section {
 .education-box {
   min-height: 135px;
 }
+
+@import "responsive";

@@ -1,18 +1,4 @@
 @import '//fonts.googleapis.com/css?family=Cutive';
-@media (max-width: 575.98px) {
-  .education-box {
-    min-height: 220px !important;
-  }
-}
-@media (max-width: 767.98px) {
-  .experience-box .experience-title {
-    border-right: unset !important;
-    text-align: center;
-  }
-  .experience-box .experience-title:not(:last-child) {
-    border-bottom: 1px solid;
-  }
-}
 .scene {
   padding: 2rem 2rem;
   margin: 0 auto;
@@ -375,7 +361,7 @@ body {
 }
 
 .gender-location {
-  width: 30%;
+  gap: 20px;
 }
 
 .my-photo {
@@ -441,4 +427,27 @@ section:nth-child(even) {
 
 .education-box {
   min-height: 135px;
+}
+
+@media (max-width: 1199.98px) {
+  .my-photo {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .experience-box .experience-title {
+    border-right: unset !important;
+    text-align: center;
+  }
+  .experience-box .experience-title:not(:last-child) {
+    border-bottom: 1px solid;
+  }
+}
+@media (max-width: 575.98px) {
+  .education-box {
+    min-height: 220px !important;
+  }
+  .my-photo {
+    max-width: 70%;
+  }
 }/*# sourceMappingURL=app.css.map */
