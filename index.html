@@ -24,6 +24,7 @@
   <script src="assets/js/app.js"></script>
 </head>
 <body>
+  <div class="loader"></div>
   <div class="container text-center d-flex" style="height: 100vh;">
     <div class="scene d-flex align-items-center">
       <div class="actor">
@@ -44,9 +45,16 @@
           <div class="experience-title col-md-3">Well knowledge of <br class="d-none d-lg-block"> Desain Thinking</div>
           <div class="experience-title col-md-3">Knowledge of <br class="d-none d-lg-block"> front-end and back-end</div>
         </div>
+        <!-- hire me -->
+          <div class="fs-5 pt-5 text-center">
+            Unleash the Power of Exceptional User Experiences! <br> Hire Me, Your Future UI/UX Designer, Today!
+          </div>
+          <div class="fs-6 py-3 text-center">Text me on email!</div>
+          <div class="d-grid gap-2 col-6 mx-auto pb-5">
+            <a href="mailto:rrisa329@gmail.com" class="btn btn-primary btn-lg">Hire me</a>
+          </div>
       </div>
     </section>
-    
     <!-- SECTION LAST PROJECTS -->
     <section id="section_2" class="py-5">
       <div class="container">
@@ -126,7 +134,7 @@
                     Denpasar, Bali
                   </div>
                   <p class="fs-2 fw-semibold m-0">About Me</p>
-                  <p>Hi, I’m Risa as UI/UX Designer for 2 years. Right now I working at NGO that create platform for international scale</p>
+                  <p>I'm a UI/UX designer for 2 year, I have experience as UI/UX designer in Aidhub Foundation. I have skill to design and code as well. Then I know how the system work and how the design should be</p>
                   <p class="fs-6 text-start">Any question? Let's contact</p>
                   <div class="sosmed d-flex justify-content-lg-start my-3" style="gap: 10px">
                     <a class="rounded" href="mailto:rrisa329@gmail.com"><img src="assets/img/icon/gmail.svg" class="img-fluid rounded p-3" style="width: 50px; height: 50px;"></a>
@@ -155,11 +163,11 @@
                 </div>
               </div>
               <p class="fs-6 text-start">Any question? Let's contact</p>
-              <div class="sosmed d-flex justify-content-lg-start my-3" style="gap: 10px">
-                <a href="mailto:rrisa329@gmail.com"><img src="assets/img/icon/gmail.svg" class="img-fluid rounded bg-white p-3" style="width: 50px; height: 50px;"></a>
-                <a href="https://wa.me/+6289685788761"><img src="assets/img/icon/whatsapp.svg" class="img-fluid rounded bg-white-linkedin p-3" style="width: 50px;"></a>
-                <a href="https://www.linkedin.com/in/risa-rahayu-875432195/"><img src="assets/img/icon/linkedin.svg" class="img-fluid rounded bg-white p-3 " style="width: 50px;"></a>
-              </div>
+                  <div class="sosmed d-flex justify-content-sm-start my-3" style="gap: 10px">
+                    <a class="rounded" href="mailto:rrisa329@gmail.com"><img src="assets/img/icon/gmail.svg" class="img-fluid rounded p-3" style="width: 50px; height: 50px;"></a>
+                    <a class="rounded" href="https://wa.me/+6289685788761"><img src="assets/img/icon/whatsapp.svg" class="img-fluid rounded-linkedin p-3" style="width: 50px;"></a>
+                    <a class="rounded" href="https://www.linkedin.com/in/risa-rahayu-875432195/"><img src="assets/img/icon/linkedin.svg" class="img-fluid rounded p-3 " style="width: 50px;"></a>
+                  </div>
             </div>
           </div>
         </div>
@@ -173,7 +181,7 @@
               </div>
               <div class="col-12 col-sm-6 d-flex flex-column justify-content-center">
                 <p class="fs-3 fw-semibold m-0 text-center text-sm-center">2018 - 2021</p>
-                <p class="fs-6 fw-semibold m-0 text-center text-sm-center">Informatica Information</p>
+                <p class="fs-6 fw-semibold m-0 text-center text-sm-center">Informatics Management (Diploma)</p>
               </div>
             </div>
           </div>
@@ -184,7 +192,7 @@
               </div>
               <div class="col-12 col-sm-6 d-flex flex-column justify-content-center ">
                 <p class="fs-3 fw-semibold m-0 text-center text-sm-center">2022-Still here</p>
-                <p class="fs-6 fw-semibold m-0 text-center text-sm-center">Information System</p>
+                <p class="fs-6 fw-semibold m-0 text-center text-sm-center">Information System (Bachelor)/p>
               </div>
             </div>
           </div>
@@ -578,7 +586,33 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <div class="p-5 container text-center">
+      UI/UX Designer . <a href="#mailto:rrisa329@gmail.com" style="text-decoration: none;"> Hire Me</a>
+      <p class="fs-6 text-center">Any question? Let's contact</p>
+                  <div class="sosmed d-flex justify-content-sm-center my-3" style="gap: 10px">
+                    <a class="rounded" href="mailto:rrisa329@gmail.com"><img src="assets/img/icon/gmail.svg" class="img-fluid rounded p-3" style="width: 50px; height: 50px;"></a>
+                    <a class="rounded" href="https://wa.me/+6289685788761"><img src="assets/img/icon/whatsapp.svg" class="img-fluid rounded-linkedin p-3" style="width: 50px;"></a>
+                    <a class="rounded" href="https://www.linkedin.com/in/risa-rahayu-875432195/"><img src="assets/img/icon/linkedin.svg" class="img-fluid rounded p-3 " style="width: 50px;"></a>
+                  </div>
+  </footer>
+
+  <!-- loader -->
+  <script>
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+  
+    loader.classList.add("loader--hidden");
+  
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  });
+  </script>
+  
+  
+ 
+
   <!-- Theater -->
   <script type="text/javascript">
     var theater = theaterJS()
