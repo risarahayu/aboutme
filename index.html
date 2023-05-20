@@ -691,7 +691,7 @@
 
   <script>
     $(function() {
-      $('swiper-container').find(".card-body").not('.target-height').css('min-height', swiper.find('.target-height').outerHeight());
+      $('swiper-container').find(".card-body").not('.target-height').css('min-height', $('swiper-container').find('.target-height').outerHeight());
     })
     $(window).on('resize', function() {
       var windowWidth = $(window).width();
