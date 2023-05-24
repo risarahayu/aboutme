@@ -347,37 +347,6 @@ blockquote {
     width: 30%;
   }
 }
-body {
-  color: white;
-  background-color: #032038;
-}
-
-.bg-white-linkedin {
-  background-color: white;
-}
-
-.bg-white-linkedin :hover {
-  background-color: #0076B2;
-}
-
-.gender-location {
-  gap: 20px;
-}
-
-.my-photo {
-  max-width: 70%;
-}
-
-section:first-child {
-  min-height: 100vh;
-}
-section:nth-child(odd) {
-  background-color: #032038;
-}
-section:nth-child(even) {
-  background-color: #003049;
-}
-
 .loader {
   position: fixed;
   top: 0;
@@ -415,6 +384,37 @@ section:nth-child(even) {
     transform: rotate(1turn);
   }
 }
+body {
+  color: white;
+  background-color: #032038;
+}
+
+.bg-white-linkedin {
+  background-color: white;
+}
+
+.bg-white-linkedin :hover {
+  background-color: #0076B2;
+}
+
+.gender-location {
+  gap: 20px;
+}
+
+.my-photo {
+  max-width: 70%;
+}
+
+section.section-header {
+  min-height: 100vh;
+}
+section:nth-child(odd) {
+  background-color: #032038;
+}
+section:nth-child(even) {
+  background-color: #003049;
+}
+
 .btn-primary {
   --bs-btn-color: #032038;
   --bs-btn-bg: #fff;

@@ -1,0 +1,41 @@
+@import "loader";
+
+.portfolio-bg{
+  background-image: url("../img/header-bg/portfolio.svg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+li{
+  list-style-type: none;
+  padding:0.5em;
+  a{
+    color: black;
+    text-decoration: none;
+    &:hover{
+      color: #219ebc;
+    }
+  }
+}
+
+.img{
+  height: 100%;
+  max-height: 70vh;
+  text-align: left;
+}
+
+.img-width{
+  width: 100%;
+  text-align: left;
+}
+
+.toc-list {
+  padding-left: 0px;
+}
+
+.figma-iframe {
+  width: 100%;
+  max-width: 800px ;
+  min-height: 450px ;
+}
