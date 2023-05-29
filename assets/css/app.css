@@ -334,6 +334,7 @@ blockquote {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 9rem;
   }
   .box-down {
     position: relative;
