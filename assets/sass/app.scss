@@ -46,6 +46,14 @@ section {
   --bs-btn-focus-shadow-rgb: 49,132,253;
 }
 
+.btn-text{
+  color: white;
+  text-decoration: none;
+}
+.btn-text:hover{
+  color: aqua;
+}
+
 // Section 1
 .experience-box {
   .experience-title {
